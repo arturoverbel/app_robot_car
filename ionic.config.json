@@ -1,0 +1,7 @@
+{
+  "name": "robot_car",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
