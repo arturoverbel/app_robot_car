@@ -16,8 +16,8 @@ export class HomePage {
     ) { }
     
     showAlert(status) {
-        
-        let url = 'http://35.168.88.201/clinic/api/type_accident/index.php';
+        let data = (status == 1) ? 'on' : 'off';
+        let url = 'http://35.168.88.201:3001/light/' + data;
         this.http.get(url)
           .subscribe(response => {
             console.log(response.json())
